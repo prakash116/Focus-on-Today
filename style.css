@@ -1,0 +1,158 @@
+
+body{
+    background-color: rgba(109, 234, 7, 0.1);
+    font-family: 'Poppins',sans-serif;
+}
+
+main{
+    padding: 0 16px;
+
+}
+
+.title {
+    font-size: 60px;
+    color : #48A300;
+    text-align: center;
+}
+
+.title span{
+    color: #61481C;
+}
+
+.app-container{
+    background-color: white;
+    max-width: 660px;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 32px 48px;
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.sun-icon{
+    vertical-align: middle;
+    margin-left: 16px;
+}
+
+.progress-label{
+    font-size: 14px;
+    color: #858585;
+    margin-bottom: 18px;
+}
+
+.progress-bar{
+    height: 30px;
+    background-color: rgba(72, 163, 0, 0.1);
+    border-radius: 50px
+    
+}
+
+.progress-value{
+    height: 100%;
+    width: 0%;
+    background-color: rgba(72, 155, 4, 0.979);
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-bar span{
+    padding-left: 20px;
+}
+
+.error-label{
+    font-size: 14px;
+    color: red;
+    margin-block: 0;   
+    display: none;
+    margin-top: 5px;
+}
+
+.show-error .error-label{
+    display: block;
+}
+
+.goal-container{
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 17px;
+    padding: 30px 22px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+
+.custom-checkbox{
+    height: 24px;
+    width: 24px;
+    border: 1px solid rgba(39, 37, 37, 0.553);
+    border-radius: 50%;
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.check-icon{
+    display: none;
+}
+
+.goal-container input{
+    border: none;
+    font-weight: 600;
+    margin-left: 20px;
+    height: 24px;
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+    align-items: stretch;
+    width: 80%;
+    height: 100%;
+
+}
+
+.app-container input::placeholder{
+    color: rgba(18, 17, 17, 0.189);
+}
+
+.quote{
+    font-weight: 500;
+    text-align: center;
+}
+
+.made-with{
+    font-weight: 400;
+    text-align: center;
+    color: #858585;
+}
+
+.completed .custom-checkbox{
+    background-color: #48A300;
+    border-color: #48A300;
+}
+
+.completed .check-icon{
+    display: block;
+}
+
+.completed input{
+    color: #48A300;
+    text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+    .title{
+        font-size: 32px;
+    }
+
+    .app-container{
+        padding: 16px 32px;
+    }
+
+}
+
+
+
